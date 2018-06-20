@@ -6713,6 +6713,116 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="con-molex" urn="urn:adsk.eagle:library:165">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="22-23-2061" library_version="1">
+<description>.100" (2.54mm) Center Header - 6 Pin</description>
+<wire x1="-7.62" y1="3.175" x2="7.62" y2="3.175" width="0.254" layer="21"/>
+<wire x1="7.62" y1="3.175" x2="7.62" y2="1.27" width="0.254" layer="21"/>
+<wire x1="7.62" y1="1.27" x2="7.62" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="7.62" y1="-3.175" x2="-7.62" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-7.62" y1="-3.175" x2="-7.62" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-7.62" y1="1.27" x2="7.62" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-6.35" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-7.62" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-7.62" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="22-23-2031" library_version="1">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MV" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="22-23-2061" prefix="X" uservalue="yes" library_version="1">
+<description>.100" (2.54mm) Center Header - 6 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="M" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2061">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2061" constant="no"/>
+<attribute name="OC_FARNELL" value="1462922" constant="no"/>
+<attribute name="OC_NEWARK" value="27C1933" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-23-2031" prefix="X" library_version="1">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2031">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2031" constant="no"/>
+<attribute name="OC_FARNELL" value="1462950" constant="no"/>
+<attribute name="OC_NEWARK" value="30C0862" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6831,6 +6941,13 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="X15" library="con-ptr500" deviceset="AK500/2-H" device=""/>
 <part name="X16" library="con-ptr500" deviceset="AK500/2-H" device=""/>
 <part name="X17" library="con-ptr500" deviceset="AK500/2-H" device=""/>
+<part name="X18" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2061" device=""/>
+<part name="X19" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="X20" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="X21" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="X22" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="X23" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="X24" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6851,10 +6968,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="368.3" y1="2.54" x2="368.3" y2="-96.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="368.3" y1="-96.52" x2="205.74" y2="-96.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="205.74" y1="-96.52" x2="205.74" y2="2.54" width="0.1524" layer="97" style="longdash"/>
-<wire x1="-78.74" y1="-124.46" x2="157.48" y2="-124.46" width="0.1524" layer="97" style="longdash"/>
-<wire x1="160.02" y1="-124.46" x2="160.02" y2="-271.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-78.74" y1="-124.46" x2="185.42" y2="-124.46" width="0.1524" layer="97" style="longdash"/>
+<wire x1="185.42" y1="-124.46" x2="185.42" y2="-271.78" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-78.74" y1="-124.46" x2="-78.74" y2="-271.78" width="0.1524" layer="97" style="longdash"/>
-<wire x1="-78.74" y1="-271.78" x2="160.02" y2="-271.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-78.74" y1="-271.78" x2="185.42" y2="-271.78" width="0.1524" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="254" y="-30.48" rot="MR180"/>
@@ -6994,6 +7111,30 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="X16" gate="-2" x="-40.64" y="-218.44"/>
 <instance part="X17" gate="-1" x="-40.64" y="-223.52"/>
 <instance part="X17" gate="-2" x="-40.64" y="-228.6"/>
+<instance part="X18" gate="-1" x="160.02" y="-203.2" rot="R180"/>
+<instance part="X18" gate="-2" x="160.02" y="-200.66" rot="R180"/>
+<instance part="X18" gate="-3" x="160.02" y="-198.12" rot="R180"/>
+<instance part="X18" gate="-4" x="160.02" y="-195.58" rot="R180"/>
+<instance part="X18" gate="-5" x="160.02" y="-193.04" rot="R180"/>
+<instance part="X18" gate="-6" x="160.02" y="-190.5" rot="R180"/>
+<instance part="X19" gate="-1" x="220.98" y="-132.08"/>
+<instance part="X19" gate="-2" x="220.98" y="-134.62"/>
+<instance part="X19" gate="-3" x="220.98" y="-137.16"/>
+<instance part="X20" gate="-1" x="220.417490625" y="-146.101828125"/>
+<instance part="X20" gate="-2" x="220.417490625" y="-148.641828125"/>
+<instance part="X20" gate="-3" x="220.417490625" y="-151.181828125"/>
+<instance part="X21" gate="-1" x="223.52" y="-195.58"/>
+<instance part="X21" gate="-2" x="223.52" y="-198.12"/>
+<instance part="X21" gate="-3" x="223.52" y="-200.66"/>
+<instance part="X22" gate="-1" x="220.98" y="-220.98"/>
+<instance part="X22" gate="-2" x="220.98" y="-223.52"/>
+<instance part="X22" gate="-3" x="220.98" y="-226.06"/>
+<instance part="X23" gate="-1" x="220.98" y="-259.08"/>
+<instance part="X23" gate="-2" x="220.98" y="-261.62"/>
+<instance part="X23" gate="-3" x="220.98" y="-264.16"/>
+<instance part="X24" gate="-1" x="220.98" y="-292.1"/>
+<instance part="X24" gate="-2" x="220.98" y="-294.64"/>
+<instance part="X24" gate="-3" x="220.98" y="-297.18"/>
 </instances>
 <busses>
 </busses>
@@ -7672,6 +7813,11 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="55.88" y1="-195.58" x2="53.34" y2="-195.58" width="0.1524" layer="91"/>
 <label x="55.88" y="-195.58" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="X18" gate="-4" pin="S"/>
+<wire x1="165.1" y1="-195.58" x2="162.56" y2="-195.58" width="0.1524" layer="91"/>
+<label x="165.1" y="-195.58" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="DIN4+" class="0">
 <segment>
@@ -7702,6 +7848,12 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="R31" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="-238.76" x2="53.34" y2="-238.76" width="0.1524" layer="91"/>
 <label x="55.88" y="-238.76" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X18" gate="-2" pin="S"/>
+<wire x1="165.1" y1="-200.66" x2="162.56" y2="-200.66" width="0.1524" layer="91"/>
+<label x="165.1" y="-200.66" size="1.016" layer="95" xref="yes"/>
+<label x="165.1" y="-200.66" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIN0-" class="0">
@@ -7734,6 +7886,11 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="55.88" y1="-149.86" x2="53.34" y2="-149.86" width="0.1524" layer="91"/>
 <label x="55.88" y="-149.86" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="X18" gate="-6" pin="S"/>
+<wire x1="165.1" y1="-190.5" x2="162.56" y2="-190.5" width="0.1524" layer="91"/>
+<label x="165.1" y="-190.5" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="DIN1-" class="0">
 <segment>
@@ -7765,12 +7922,22 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="134.62" y1="-149.86" x2="132.08" y2="-149.86" width="0.1524" layer="91"/>
 <label x="134.62" y="-149.86" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="X18" gate="-5" pin="S"/>
+<wire x1="165.1" y1="-193.04" x2="162.56" y2="-193.04" width="0.1524" layer="91"/>
+<label x="165.1" y="-193.04" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="DSTMIN3" class="0">
 <segment>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="-195.58" x2="132.08" y2="-195.58" width="0.1524" layer="91"/>
 <label x="134.62" y="-195.58" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X18" gate="-3" pin="S"/>
+<wire x1="165.1" y1="-198.12" x2="162.56" y2="-198.12" width="0.1524" layer="91"/>
+<label x="165.1" y="-198.12" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIN3+" class="0">
@@ -7802,6 +7969,11 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="R32" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="-238.76" x2="132.08" y2="-238.76" width="0.1524" layer="91"/>
 <label x="134.62" y="-238.76" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X18" gate="-1" pin="S"/>
+<wire x1="165.1" y1="-203.2" x2="162.56" y2="-203.2" width="0.1524" layer="91"/>
+<label x="165.1" y="-203.2" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIN5-" class="0">
