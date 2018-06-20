@@ -2243,14 +2243,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="VDD">
 <contactref element="J1" pad="3"/>
-<contactref element="C3" pad="1"/>
-<contactref element="IC2" pad="3"/>
 <contactref element="IC1" pad="4"/>
 <contactref element="IC4" pad="4"/>
-<wire x1="-37.64" y1="58.42" x2="-30.085" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.96" y1="54.61" x2="-37.64" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="-81.28" y1="54.61" x2="-60.96" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.05" y1="2.54" x2="-37.64" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.96" y1="54.61" x2="-81.28" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.64" y1="58.42" x2="-60.96" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MINUS0">
 <contactref element="IC4" pad="1"/>
@@ -2379,77 +2375,70 @@ design rules under a new name.</description>
 <contactref element="X14" pad="2"/>
 <wire x1="-62.2554" y1="45.72" x2="-75.78" y2="91.44" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN2+1">
+<signal name="DOUT2+">
 <contactref element="X24" pad="1"/>
+<contactref element="X20" pad="1"/>
+<wire x1="-87.63" y1="-29.21" x2="-85.0646" y2="-82.55" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN4+1">
+<signal name="DOUT4+">
 <contactref element="X26" pad="1"/>
+<contactref element="X21" pad="1"/>
+<wire x1="-87.63" y1="-44.45" x2="-85.0646" y2="-102.87" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN4-1">
+<signal name="DOUT4-">
 <contactref element="X26" pad="2"/>
+<contactref element="X21" pad="2"/>
+<wire x1="-85.09" y1="-44.45" x2="-80.0354" y2="-102.87" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN0-1">
+<signal name="DOUT0-">
 <contactref element="X22" pad="2"/>
+<contactref element="X19" pad="2"/>
+<wire x1="-85.09" y1="-13.97" x2="-80.0354" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN0+1">
+<signal name="DOUT0+">
 <contactref element="X22" pad="1"/>
+<contactref element="X19" pad="1"/>
+<wire x1="-87.63" y1="-13.97" x2="-85.0646" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN1-1">
+<signal name="DOUT1-">
 <contactref element="X23" pad="2"/>
+<contactref element="X19" pad="4"/>
+<wire x1="-80.01" y1="-13.97" x2="-54.6354" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN1+1">
+<signal name="DOUT1+">
 <contactref element="X23" pad="1"/>
+<contactref element="X19" pad="3"/>
+<wire x1="-82.55" y1="-13.97" x2="-59.6646" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN3+1">
+<signal name="DOUT3+">
 <contactref element="X25" pad="1"/>
+<contactref element="X20" pad="3"/>
+<wire x1="-82.55" y1="-29.21" x2="-59.6646" y2="-82.55" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN3-1">
+<signal name="DOUT3-">
 <contactref element="X25" pad="2"/>
+<contactref element="X20" pad="4"/>
+<wire x1="-80.01" y1="-29.21" x2="-54.6354" y2="-82.55" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN5-1">
+<signal name="DOUT5-">
 <contactref element="X27" pad="2"/>
+<contactref element="X21" pad="4"/>
+<wire x1="-80.01" y1="-44.45" x2="-54.6354" y2="-102.87" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN5+1">
+<signal name="DOUT5+">
 <contactref element="X27" pad="1"/>
+<contactref element="X21" pad="3"/>
+<wire x1="-82.55" y1="-44.45" x2="-59.6646" y2="-102.87" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DIN2-1">
+<signal name="DOUT2-">
 <contactref element="X24" pad="2"/>
+<contactref element="X20" pad="2"/>
+<wire x1="-85.09" y1="-29.21" x2="-80.0354" y2="-82.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
-<contactref element="X19" pad="1"/>
-</signal>
-<signal name="N$13">
-<contactref element="X19" pad="2"/>
-</signal>
-<signal name="N$14">
-<contactref element="X19" pad="3"/>
-</signal>
-<signal name="N$16">
-<contactref element="X19" pad="4"/>
-</signal>
-<signal name="N$19">
-<contactref element="X20" pad="1"/>
-</signal>
-<signal name="N$20">
-<contactref element="X20" pad="2"/>
-</signal>
-<signal name="N$21">
-<contactref element="X20" pad="3"/>
-</signal>
-<signal name="N$22">
-<contactref element="X20" pad="4"/>
-</signal>
-<signal name="N$23">
-<contactref element="X21" pad="1"/>
-</signal>
-<signal name="N$24">
-<contactref element="X21" pad="2"/>
-</signal>
-<signal name="N$25">
-<contactref element="X21" pad="3"/>
-</signal>
-<signal name="N$26">
-<contactref element="X21" pad="4"/>
+<contactref element="C3" pad="1"/>
+<contactref element="IC2" pad="3"/>
+<wire x1="-19.05" y1="2.54" x2="-30.085" y2="96.52" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
