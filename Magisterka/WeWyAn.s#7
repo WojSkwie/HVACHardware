@@ -60,6 +60,8 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -6718,24 +6720,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="22-23-2061" library_version="2">
-<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 6 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232061_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
-<wire x1="-7.62" y1="3.175" x2="7.62" y2="3.175" width="0.254" layer="21"/>
-<wire x1="7.62" y1="3.175" x2="7.62" y2="1.27" width="0.254" layer="21"/>
-<wire x1="7.62" y1="1.27" x2="7.62" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="7.62" y1="-3.175" x2="-7.62" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="-7.62" y1="-3.175" x2="-7.62" y2="1.27" width="0.254" layer="21"/>
-<wire x1="-7.62" y1="1.27" x2="-7.62" y2="3.175" width="0.254" layer="21"/>
-<wire x1="-7.62" y1="1.27" x2="7.62" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-6.35" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="3" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="4" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="6" x="6.35" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-7.62" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-7.62" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="22-23-2041" library_version="2">
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 4 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232041_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <wire x1="-5.08" y1="3.175" x2="5.08" y2="3.175" width="0.254" layer="21"/>
@@ -6766,6 +6750,21 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <text x="-2.54" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="22-23-2031" library_version="2">
+<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 3 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232031_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV" library_version="1">
@@ -6781,37 +6780,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="22-23-2061" prefix="X" uservalue="yes" library_version="2">
-<description>.100" (2.54mm) Center Header - 6 Pin</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="-5" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
-<gate name="-6" symbol="M" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="22-23-2061">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-<connect gate="-5" pin="S" pad="5"/>
-<connect gate="-6" pin="S" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MOLEX" constant="no"/>
-<attribute name="MPN" value="22-23-2061" constant="no"/>
-<attribute name="OC_FARNELL" value="1462922" constant="no"/>
-<attribute name="OC_NEWARK" value="27C1933" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="22-23-2041" prefix="X" library_version="2">
 <description>.100" (2.54mm) Center Header - 4 Pin</description>
 <gates>
@@ -6857,6 +6825,31 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <attribute name="MPN" value="22-23-2021" constant="no"/>
 <attribute name="OC_FARNELL" value="1462926" constant="no"/>
 <attribute name="OC_NEWARK" value="25C3832" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-23-2031" prefix="X" library_version="2">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2031">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2031" constant="no"/>
+<attribute name="OC_FARNELL" value="1462950" constant="no"/>
+<attribute name="OC_NEWARK" value="30C0862" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11535,7 +11528,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="IC2" library="lm1117" deviceset="LM1117T-*" device="" technology="3.3"/>
 <part name="OK1" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="PC814" device=""/>
 <part name="OK2" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="PC814" device=""/>
 <part name="OK3" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="PC814" device=""/>
@@ -11572,7 +11564,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="X15" library="con-ptr500" deviceset="AK500/2-H" device=""/>
 <part name="X16" library="con-ptr500" deviceset="AK500/2-H" device=""/>
 <part name="X17" library="con-ptr500" deviceset="AK500/2-H" device=""/>
-<part name="X18" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2061" device=""/>
 <part name="X19" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device=""/>
 <part name="X20" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device=""/>
 <part name="X21" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device=""/>
@@ -11605,6 +11596,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
+<part name="IC5" library="lm1117" deviceset="LM1117T-*" device="-V" technology="3.3"/>
+<part name="X18" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="X31" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11617,10 +11611,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-38.1" y1="5.08" x2="-38.1" y2="-30.48" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-38.1" y1="-30.48" x2="-88.9" y2="-30.48" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-88.9" y1="-30.48" x2="-88.9" y2="5.08" width="0.1524" layer="97" style="longdash"/>
-<wire x1="-17.78" y1="101.6" x2="10.16" y2="101.6" width="0.1524" layer="97" style="longdash"/>
-<wire x1="10.16" y1="101.6" x2="10.16" y2="73.66" width="0.1524" layer="97" style="longdash"/>
-<wire x1="10.16" y1="73.66" x2="-17.78" y2="73.66" width="0.1524" layer="97" style="longdash"/>
-<wire x1="-17.78" y1="73.66" x2="-17.78" y2="101.6" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-20.32" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="97" style="longdash"/>
+<wire x1="7.62" y1="55.88" x2="7.62" y2="27.94" width="0.1524" layer="97" style="longdash"/>
+<wire x1="7.62" y1="27.94" x2="-20.32" y2="27.94" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-20.32" y1="27.94" x2="-20.32" y2="55.88" width="0.1524" layer="97" style="longdash"/>
 <wire x1="205.74" y1="2.54" x2="368.3" y2="2.54" width="0.1524" layer="97" style="longdash"/>
 <wire x1="368.3" y1="2.54" x2="368.3" y2="-96.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="368.3" y1="-96.52" x2="205.74" y2="-96.52" width="0.1524" layer="97" style="longdash"/>
@@ -11637,10 +11631,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-111.76" y1="-30.48" x2="-111.76" y2="5.08" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-111.76" y1="5.08" x2="-165.1" y2="5.08" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-111.76" y1="-30.48" x2="-165.1" y2="-30.48" width="0.1524" layer="97" style="longdash"/>
-<wire x1="40.64" y1="73.66" x2="40.64" y2="101.6" width="0.1524" layer="97" style="longdash"/>
-<wire x1="71.12" y1="73.66" x2="71.12" y2="101.6" width="0.1524" layer="97" style="longdash"/>
-<wire x1="40.64" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="97" style="longdash"/>
-<wire x1="40.64" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="97" style="longdash"/>
+<wire x1="40.64" y1="30.48" x2="40.64" y2="55.88" width="0.1524" layer="97" style="longdash"/>
+<wire x1="68.58" y1="30.48" x2="68.58" y2="55.88" width="0.1524" layer="97" style="longdash"/>
+<wire x1="40.64" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="97" style="longdash"/>
+<wire x1="40.64" y1="30.48" x2="68.58" y2="30.48" width="0.1524" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="254" y="-30.48" rot="MR180"/>
@@ -11648,10 +11642,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="IC1" gate="B" x="307.34" y="-30.48" rot="MR180"/>
 <instance part="IC1" gate="C" x="254" y="-66.04" rot="MR180"/>
 <instance part="IC1" gate="D" x="307.34" y="-66.04" rot="MR180"/>
-<instance part="3V3" gate="VCC" x="63.5" y="93.98"/>
-<instance part="GND1" gate="1" x="63.5" y="86.36"/>
-<instance part="J1" gate="G$1" x="-7.62" y="86.36"/>
-<instance part="GND2" gate="1" x="2.54" y="81.28"/>
+<instance part="3V3" gate="VCC" x="60.96" y="48.26"/>
+<instance part="GND1" gate="1" x="60.96" y="40.64"/>
+<instance part="J1" gate="G$1" x="-10.16" y="40.64"/>
+<instance part="GND2" gate="1" x="0" y="35.56"/>
 <instance part="C2" gate="G$1" x="-45.72" y="-12.7"/>
 <instance part="C3" gate="G$1" x="-81.28" y="-12.7"/>
 <instance part="GND3" gate="1" x="-63.5" y="-25.4"/>
@@ -11715,9 +11709,9 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="X11" gate="-2" x="350.52" y="-17.78" rot="R180"/>
 <instance part="X11" gate="-3" x="350.52" y="-15.24" rot="R180"/>
 <instance part="X11" gate="-4" x="350.52" y="-12.7" rot="R180"/>
-<instance part="X4" gate="-1" x="58.42" y="88.9" rot="R180"/>
-<instance part="X4" gate="-2" x="58.42" y="91.44" rot="R180"/>
-<instance part="12V" gate="G$1" x="2.54" y="93.98"/>
+<instance part="X4" gate="-1" x="55.88" y="43.18" rot="R180"/>
+<instance part="X4" gate="-2" x="55.88" y="45.72" rot="R180"/>
+<instance part="12V" gate="G$1" x="0" y="48.26"/>
 <instance part="12V3" gate="G$1" x="332.74" y="-17.78"/>
 <instance part="12V2" gate="G$1" x="40.64" y="2.54"/>
 <instance part="X1" gate="-1" x="-5.08" y="-53.34"/>
@@ -11736,7 +11730,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND23" gate="1" x="355.6" y="-78.74"/>
 <instance part="GND24" gate="1" x="355.6" y="-66.04"/>
 <instance part="GND25" gate="1" x="355.6" y="-40.64"/>
-<instance part="IC2" gate="G$1" x="-63.5" y="-7.62"/>
 <instance part="OK1" gate="A" x="104.14" y="-152.4"/>
 <instance part="OK2" gate="A" x="25.4" y="-152.4"/>
 <instance part="OK3" gate="A" x="104.14" y="-198.12"/>
@@ -11779,12 +11772,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="X16" gate="-2" x="-40.64" y="-218.44"/>
 <instance part="X17" gate="-1" x="-40.64" y="-223.52"/>
 <instance part="X17" gate="-2" x="-40.64" y="-228.6"/>
-<instance part="X18" gate="-1" x="160.02" y="-203.2" rot="R180"/>
-<instance part="X18" gate="-2" x="160.02" y="-200.66" rot="R180"/>
-<instance part="X18" gate="-3" x="160.02" y="-198.12" rot="R180"/>
-<instance part="X18" gate="-4" x="160.02" y="-195.58" rot="R180"/>
-<instance part="X18" gate="-5" x="160.02" y="-193.04" rot="R180"/>
-<instance part="X18" gate="-6" x="160.02" y="-190.5" rot="R180"/>
 <instance part="X19" gate="-1" x="238.76" y="-170.18"/>
 <instance part="X19" gate="-2" x="238.76" y="-172.72"/>
 <instance part="X19" gate="-3" x="238.76" y="-175.26"/>
@@ -11835,6 +11822,13 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND39" gate="1" x="233.68" y="-142.24"/>
 <instance part="GND40" gate="1" x="233.68" y="-152.4"/>
 <instance part="GND41" gate="1" x="233.68" y="-162.56"/>
+<instance part="IC5" gate="G$1" x="-63.5" y="-7.62"/>
+<instance part="X18" gate="-1" x="160.02" y="-193.04" rot="R180"/>
+<instance part="X18" gate="-2" x="160.02" y="-190.5" rot="R180"/>
+<instance part="X18" gate="-3" x="160.02" y="-187.96" rot="R180"/>
+<instance part="X31" gate="-1" x="160.02" y="-203.2" rot="R180"/>
+<instance part="X31" gate="-2" x="160.02" y="-200.66" rot="R180"/>
+<instance part="X31" gate="-3" x="160.02" y="-198.12" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -11847,12 +11841,12 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="3V1" gate="VCC" pin="VCC"/>
 <wire x1="-45.72" y1="-5.08" x2="-45.72" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-45.72" y="-7.62"/>
-<pinref part="IC2" gate="G$1" pin="OUT"/>
+<pinref part="IC5" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="X4" gate="-2" pin="S"/>
 <pinref part="3V3" gate="VCC" pin="VCC"/>
-<wire x1="63.5" y1="91.44" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OK4" gate="A" pin="C"/>
@@ -11906,12 +11900,12 @@ Source: AVX .. aphvc.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="86.36" x2="2.54" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="86.36" x2="2.54" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="0" y1="40.64" x2="0" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="83.82" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="0" y1="38.1" x2="-5.08" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<junction x="2.54" y="83.82"/>
+<junction x="0" y="38.1"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -11924,7 +11918,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="-63.5" y="-20.32"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-63.5" y1="-22.86" x2="-63.5" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="GND"/>
+<pinref part="IC5" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="V-"/>
@@ -11999,7 +11993,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="X4" gate="-1" pin="S"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="63.5" y1="88.9" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-2" pin="KL"/>
@@ -12467,8 +12461,8 @@ Source: AVX .. aphvc.pdf</description>
 <net name="VDD" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="-2.54" y1="88.9" x2="2.54" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="88.9" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="43.18" x2="0" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="0" y1="43.18" x2="0" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="12V" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
@@ -12566,9 +12560,9 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="53.34" y="-195.58"/>
 </segment>
 <segment>
-<pinref part="X18" gate="-4" pin="S"/>
-<wire x1="165.1" y1="-195.58" x2="162.56" y2="-195.58" width="0.1524" layer="91"/>
-<label x="165.1" y="-195.58" size="1.016" layer="95" xref="yes"/>
+<wire x1="165.1" y1="-193.04" x2="162.56" y2="-193.04" width="0.1524" layer="91"/>
+<label x="165.1" y="-193.04" size="1.016" layer="95" xref="yes"/>
+<pinref part="X18" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="DIN4+" class="0">
@@ -12604,10 +12598,10 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="53.34" y="-238.76"/>
 </segment>
 <segment>
-<pinref part="X18" gate="-2" pin="S"/>
 <wire x1="165.1" y1="-200.66" x2="162.56" y2="-200.66" width="0.1524" layer="91"/>
 <label x="165.1" y="-200.66" size="1.016" layer="95" xref="yes"/>
 <label x="165.1" y="-200.66" size="1.016" layer="95" xref="yes"/>
+<pinref part="X31" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="DIN0-" class="0">
@@ -12643,9 +12637,9 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="53.34" y="-149.86"/>
 </segment>
 <segment>
-<pinref part="X18" gate="-6" pin="S"/>
-<wire x1="165.1" y1="-190.5" x2="162.56" y2="-190.5" width="0.1524" layer="91"/>
-<label x="165.1" y="-190.5" size="1.016" layer="95" xref="yes"/>
+<wire x1="165.1" y1="-187.96" x2="162.56" y2="-187.96" width="0.1524" layer="91"/>
+<label x="165.1" y="-187.96" size="1.016" layer="95" xref="yes"/>
+<pinref part="X18" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="DIN1-" class="0">
@@ -12681,9 +12675,9 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="132.08" y="-149.86"/>
 </segment>
 <segment>
-<pinref part="X18" gate="-5" pin="S"/>
-<wire x1="165.1" y1="-193.04" x2="162.56" y2="-193.04" width="0.1524" layer="91"/>
-<label x="165.1" y="-193.04" size="1.016" layer="95" xref="yes"/>
+<wire x1="165.1" y1="-190.5" x2="162.56" y2="-190.5" width="0.1524" layer="91"/>
+<label x="165.1" y="-190.5" size="1.016" layer="95" xref="yes"/>
+<pinref part="X18" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="DSTMIN3" class="0">
@@ -12695,9 +12689,9 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="132.08" y="-195.58"/>
 </segment>
 <segment>
-<pinref part="X18" gate="-3" pin="S"/>
 <wire x1="165.1" y1="-198.12" x2="162.56" y2="-198.12" width="0.1524" layer="91"/>
 <label x="165.1" y="-198.12" size="1.016" layer="95" xref="yes"/>
+<pinref part="X31" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="DIN3+" class="0">
@@ -12733,9 +12727,9 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="132.08" y="-238.76"/>
 </segment>
 <segment>
-<pinref part="X18" gate="-1" pin="S"/>
 <wire x1="165.1" y1="-203.2" x2="162.56" y2="-203.2" width="0.1524" layer="91"/>
 <label x="165.1" y="-203.2" size="1.016" layer="95" xref="yes"/>
+<pinref part="X31" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="DIN5-" class="0">
@@ -12932,8 +12926,8 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-81.28" y1="-7.62" x2="-71.12" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="-5.08" x2="-81.28" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-81.28" y="-7.62"/>
-<pinref part="IC2" gate="G$1" pin="IN"/>
 <label x="-81.28" y="-5.08" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC5" gate="G$1" pin="IN"/>
 </segment>
 <segment>
 <pinref part="X28" gate="-1" pin="S"/>
