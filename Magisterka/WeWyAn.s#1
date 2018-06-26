@@ -19573,13 +19573,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="T4" gate="A" pin="B"/>
 </segment>
 </net>
-<net name="DSTMOUT03" class="0">
-<segment>
-<pinref part="R43" gate="G$1" pin="1"/>
-<wire x1="317.5" y1="-210.82" x2="314.96" y2="-210.82" width="0.1524" layer="91"/>
-<label x="314.96" y="-210.82" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="R42" gate="G$1" pin="2"/>
@@ -19630,6 +19623,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="X20" gate="-3" pin="S"/>
 <wire x1="238.76" y1="-203.2" x2="236.22" y2="-203.2" width="0.1524" layer="91"/>
 <label x="238.76" y="-203.2" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R43" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="-210.82" x2="314.96" y2="-210.82" width="0.1524" layer="91"/>
+<label x="314.96" y="-210.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DSTMOUT4" class="0">

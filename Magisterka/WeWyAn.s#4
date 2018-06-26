@@ -11448,6 +11448,127 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="relay" urn="urn:adsk.eagle:library:339">
+<description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eichhoff
+&lt;li&gt;Finder
+&lt;li&gt;Fujitsu
+&lt;li&gt;HAMLIN
+&lt;li&gt;OMRON
+&lt;li&gt;Matsushita
+&lt;li&gt;NAiS
+&lt;li&gt;Siemens
+&lt;li&gt;Schrack
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="E3206S" urn="urn:adsk.eagle:footprint:23969/1" library_version="1">
+<description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
+1 x switch, Eichhoff/distributor Schukat</description>
+<wire x1="22.86" y1="6.1976" x2="-5.6642" y2="6.1976" width="0.1524" layer="21"/>
+<wire x1="-5.6642" y1="6.1976" x2="-5.6642" y2="-6.2992" width="0.1524" layer="21"/>
+<wire x1="-5.6642" y1="-6.2992" x2="22.86" y2="-6.2992" width="0.1524" layer="21"/>
+<wire x1="17.145" y1="1.6764" x2="17.145" y2="-2.5654" width="0.1524" layer="21"/>
+<wire x1="17.145" y1="-2.5654" x2="16.129" y2="-4.1402" width="0.254" layer="21"/>
+<wire x1="15.4686" y1="-3.81" x2="16.4592" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.0574" x2="-3.175" y2="1.1938" width="0.1524" layer="21"/>
+<wire x1="-1.1684" y1="1.1938" x2="-1.1684" y2="-1.3208" width="0.254" layer="21"/>
+<wire x1="-5.1816" y1="-1.3208" x2="-5.1816" y2="1.1938" width="0.254" layer="21"/>
+<wire x1="-5.1816" y1="1.1938" x2="-3.175" y2="1.1938" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="1.1938" x2="-1.6764" y2="1.1938" width="0.254" layer="21"/>
+<wire x1="-4.6736" y1="-1.3208" x2="-5.1816" y2="-1.3208" width="0.254" layer="21"/>
+<wire x1="-1.6764" y1="1.1938" x2="-4.6736" y2="-1.3208" width="0.1524" layer="21"/>
+<wire x1="-1.6764" y1="1.1938" x2="-1.1684" y2="1.1938" width="0.254" layer="21"/>
+<wire x1="-1.1684" y1="-1.3208" x2="-3.175" y2="-1.3208" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="-1.3208" x2="-3.175" y2="-2.0574" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.3208" x2="-4.6736" y2="-1.3208" width="0.254" layer="21"/>
+<wire x1="17.78" y1="-3.81" x2="18.8214" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="22.86" y1="-6.2992" x2="22.86" y2="-4.826" width="0.1524" layer="21"/>
+<wire x1="22.86" y1="-2.794" x2="22.86" y2="-4.826" width="0.1524" layer="51"/>
+<wire x1="22.86" y1="-2.794" x2="22.86" y2="6.1976" width="0.1524" layer="21"/>
+<pad name="2" x="-3.175" y="-3.81" drill="1.397" shape="long" rot="R90"/>
+<pad name="1" x="-3.175" y="3.81" drill="1.397" shape="long" rot="R90"/>
+<pad name="P" x="17.145" y="3.81" drill="1.397" shape="long" rot="R90"/>
+<pad name="O" x="13.335" y="-3.81" drill="1.397" shape="long" rot="R90"/>
+<pad name="S" x="20.955" y="-3.81" drill="1.397" shape="long" rot="R90"/>
+<text x="24.9936" y="-6.2992" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0" y="-5.0546" size="1.778" layer="51" ratio="10">E3206S</text>
+<text x="0" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="E3206S" urn="urn:adsk.eagle:package:24311/1" type="box" library_version="1">
+<description>RELAY
+1 x switch, Eichhoff/distributor Schukat</description>
+<packageinstances>
+<packageinstance name="E3206S"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="K" urn="urn:adsk.eagle:symbol:23941/1" library_version="1">
+<wire x1="-3.81" y1="-1.905" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="1.905" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.905" x2="1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="1.905" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<text x="1.27" y="2.921" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.27" y="5.08" size="1.778" layer="95">&gt;PART</text>
+<pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="U" urn="urn:adsk.eagle:symbol:23944/1" library_version="1">
+<wire x1="3.175" y1="5.08" x2="1.905" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="5.08" x2="-1.905" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="5.715" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<circle x="0" y="1.27" radius="0.127" width="0.4064" layer="94"/>
+<text x="2.54" y="0" size="1.778" layer="95">&gt;PART</text>
+<pin name="O" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="S" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="P" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="E3206S" urn="urn:adsk.eagle:component:24587/1" prefix="K" library_version="1">
+<description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
+1 x switch, Eichhoff/distributor Schukat</description>
+<gates>
+<gate name="1" symbol="K" x="0" y="0" addlevel="must"/>
+<gate name="2" symbol="U" x="15.24" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="E3206S">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="2" pin="O" pad="O"/>
+<connect gate="2" pin="P" pad="P"/>
+<connect gate="2" pin="S" pad="S"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24311/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11599,6 +11720,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="IC5" library="lm1117" deviceset="LM1117T-*" device="-V" technology="3.3"/>
 <part name="X18" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
 <part name="X31" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="K1" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="E3206S" device="" package3d_urn="urn:adsk.eagle:package:24311/1"/>
+<part name="K2" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="E3206S" device="" package3d_urn="urn:adsk.eagle:package:24311/1"/>
+<part name="K3" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="E3206S" device="" package3d_urn="urn:adsk.eagle:package:24311/1"/>
+<part name="K4" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="E3206S" device="" package3d_urn="urn:adsk.eagle:package:24311/1"/>
+<part name="K5" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="E3206S" device="" package3d_urn="urn:adsk.eagle:package:24311/1"/>
+<part name="K6" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="E3206S" device="" package3d_urn="urn:adsk.eagle:package:24311/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -11829,6 +11956,18 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="X31" gate="-1" x="160.02" y="-203.2" rot="R180"/>
 <instance part="X31" gate="-2" x="160.02" y="-200.66" rot="R180"/>
 <instance part="X31" gate="-3" x="160.02" y="-198.12" rot="R180"/>
+<instance part="K1" gate="1" x="411.48" y="-111.76"/>
+<instance part="K1" gate="2" x="426.72" y="-111.76"/>
+<instance part="K2" gate="1" x="411.48" y="-127"/>
+<instance part="K2" gate="2" x="426.72" y="-127"/>
+<instance part="K3" gate="1" x="411.48" y="-144.78"/>
+<instance part="K3" gate="2" x="426.72" y="-144.78"/>
+<instance part="K4" gate="1" x="411.48" y="-160.02"/>
+<instance part="K4" gate="2" x="426.72" y="-160.02"/>
+<instance part="K5" gate="1" x="411.48" y="-177.8"/>
+<instance part="K5" gate="2" x="426.72" y="-177.8"/>
+<instance part="K6" gate="1" x="411.48" y="-195.58"/>
+<instance part="K6" gate="2" x="426.72" y="-195.58"/>
 </instances>
 <busses>
 </busses>
